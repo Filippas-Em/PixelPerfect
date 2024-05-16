@@ -1,0 +1,108 @@
+@media screen and (max-width: 1400px) {
+    .desktopNav {
+        display: none;
+    }
+}
+@media screen and (min-width: 1401px) {
+    .hamNav {
+        display: none;
+    }
+}
+@media screen and (max-width:1610px){
+    #img2 {
+        display: none;
+    }
+    .hero {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        font-size: 50px;
+    }
+    .heroButtons {
+        all: unset;
+        margin-bottom: 30px;
+    }
+    #img1 {
+        scale: 0.5;
+        bottom: -175px;
+        right: 200px;
+    }
+}
+
+@media  screen and (max-width: 1000px) {
+    #img1 {
+        right: -40px;
+    }
+    .hero {
+        all: unset;
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroText {
+        font-size: 40px;
+    }
+    .heroButtons {
+        margin: 20px 0 0 0;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:750px){
+    #img1 {
+        right: -250px;
+    }
+    .heroText{
+        font-size: 30px;
+    }
+    .heroText span {
+        font-size: 40px;
+    }
+
+    
+    
+}
+@media screen and (max-width:500px) {
+    #img1 {
+       scale: 0.4;
+       bottom: -210px;
+       right: -300px;
+    }
+    .heroText {
+        font-size: 20px;
+        margin: 20px;
+        margin-top: 17%;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #img1 {
+        scale: 0.4;
+    }
+
+    .heroText {
+        font-weight: heavy;
+        margin: 0;
+        line-height: 2;
+        font-size: 20px;
+    }
+
+    .heroText span {
+        font-size: 35px;
+    }   
+
+    .heroButtons {
+
+        display: flex;
+        flex-direction: column;
+    }
+    #heroBtn1 {
+        margin-bottom: 20px;
+    }
+}
