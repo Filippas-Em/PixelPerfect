@@ -353,6 +353,13 @@ header {
     margin: 10px;
 }
 
+.hiddenLeft {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-44%);
+    transition: all 2s ease;
+}
+
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -365,3 +372,88 @@ header {
     filter: blur(0);
     transform: translate(0);
 }
+
+.about {
+    margin-bottom: 100px;
+    color: #343a40;
+}
+
+.aboutWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;    
+}
+
+.aboutWrapper2 {
+    display: flex;
+    
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+}
+
+.aboutWrapper2 img {
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+
+    width: 350px;
+    border-radius: 15px;
+}
+
+.aboutWrapper img {
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    border-radius: 15px;
+}
+
+.aboutContainer {
+    background-color: white;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+.aboutText {
+    width: 80%;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#aboutH3 {
+    font-size: 25px;
+}
+
+.aboutWrapper3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;  
+}
+
+
+.aboutImages {
+    position: relative;
+
+}
+
+.aboutImages img{
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+#aboutPhoto1 {
+    position: absolute;
+    right: 60px;
+    top: -20px;
+}
+

@@ -14,13 +14,13 @@ const observer = new IntersectionObserver((entries) => {
         console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-
-        }
+        } 
     });
 });
 
 //selecting elements to be animated
 const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElementsLeft = document.querySelectorAll('.hiddenLeft');
+
 hiddenElements.forEach((el) => observer.observe(el));
+hiddenElementsLeft.forEach((el) => observer.observe(el));

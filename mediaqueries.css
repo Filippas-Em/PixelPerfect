@@ -106,3 +106,41 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .aboutContainer {
+        height: 350px;
+
+    }
+    
+}
+
+@media screen and (max-width: 930px) {
+    .aboutWrapper, .aboutWrapper2 , .aboutWrapper3{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+    
+    .aboutContainer {
+        border-radius: 20px;
+        margin: 20px;
+        padding: 10px;
+        width: unset;
+        height: unset;
+    }
+
+    #aboutPhoto1 , #aboutPhoto2 {
+        display: none;
+    }
+
+    #aboutH3 {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.5);   
+        border-radius: 20px; 
+     }
+}
