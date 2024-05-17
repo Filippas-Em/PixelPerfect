@@ -81,7 +81,7 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {  
     #img1 {
         scale: 0.4;
     }
