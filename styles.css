@@ -6,7 +6,7 @@
 
 body{
     font-family: "Roboto", sans-serif;
-
+    background-color: #f8f9fa;
 }
 
 header {
@@ -103,7 +103,6 @@ header {
 .heroButtons button {
     font-size: 30px;
     padding: 10px 20px;
-    background: ;
     border: solid 2px #2e2e2e;
     transition: all 0.3s;
     border-radius: 10px;
@@ -154,7 +153,7 @@ header {
 }
 
 .off-screen-menu {
-    background:linear-gradient(45deg, violet, lightblue) ; ;
+    background:linear-gradient(45deg, violet, lightblue) ; 
     height: 100vh;
     width: 100%;    
     max-width: 450px;
@@ -234,80 +233,119 @@ header {
     
 }
 
-
-.serviceContainer {
+.services {
+    color: #343a40;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 100px;
-    margin-bottom: 300px; /* Delete me later!  */
+    margin: 20px;
 }
 
-.box {
-    width: 600px;
-    height: 650px;
-    border-radius: 20px;
-    margin: 20px;
+.serviceWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);}
-
-
-.box .serviceOffer{
-    background:linear-gradient(45deg, violet, lightblue) ;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 100%;
-    text-align: center;
-    padding: 15px;
-}
-
-.box .serviceDescription {
-    width: 70%; 
-    margin-left: 10%;
-    margin: 20px 10%;
-    font-size: 30px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     
+    margin: 200px 0 ; /*Delete me later*/
 }
 
-.box .price{
-    position: absolute;
-    bottom: 35px;
-    width: 100%;
-    margin-bottom: 10%;
+#serviceHeader {
+    font-size: 30px;
+    font-weight: 500;
     text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
 
 }
 
-.box .price h3 {
+
+.serviceContainer {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.box {
+    background-color: white;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.box2,.box4 {
+    background-color: #f8f9fa;
+}
+
+.box:hover {
+    scale: 1.1;
+}
+
+.serviceOffer {
+    margin: 20px;
+
+}
+
+.price {
+    font-size: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.box .price span{
-    font-size: 40px;
-    font-weight: bold;
-    color: green;
-    margin-left: 10px;
+
+.price span {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px;
+    color: #3e9c35;
 }
 
-.box button{
-    position: absolute;
-    bottom: 20px;
-    font-size: 20px;
-    font-weight: bold   ;
-    color: #002137;
-    padding: 20px 30px;
+.check{
     background: linear-gradient(45deg, violet, lightblue);
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
+    width: 70%;
     transition: all 0.3s ease;
+    margin: 20px 0;
 }
 
-.box button:hover {
+.check:hover {
     cursor: pointer;
-    background: linear-gradient(45deg, lightblue, violet);
-    scale: 1.2;
+    scale: 1.1;
+}
+
+.serviceDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.serviceDescription span {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    text-align: left;
+}
+.serviceDescription img {
+    width: 30px;
+    margin: 10px;
 }
