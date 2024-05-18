@@ -657,3 +657,103 @@ header {
 .pbox:nth-child(4) {
     transition-delay: 800ms;
 }
+
+.contactWrapper {
+    margin-top: 200px;
+    padding: 100px 0;
+    background-color: #0d1b2a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactAddress {
+    margin-top: 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactAddress p {
+    display: flex;
+    font-size: 20px;
+    margin: 20px 0;
+    
+}
+
+.contactAddress img {
+    margin-right: 10px;
+    max-height: 24px;
+}
+
+.contactForm {
+    color:#343a40 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    background-color: #f8f9fa;
+}
+
+.contactForm input,textarea {
+    font-size: 25px ;
+    background-color: #f8f9fa;
+    margin: 10px 0;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.contactForm textarea {
+    height: 150px;
+}
+
+.map{
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    margin: 20px;
+}
+
+#submitButton {
+    background-color: #3498db;
+    color: white;
+    width: 40%;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+#submitButton:hover {
+    cursor: pointer;
+    background-color: #2e2e2e;
+    scale: 1.1;
+}
+
+.contactStart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 25px;
+    max-width: 70%;
+    margin-bottom: 40px;
+}
