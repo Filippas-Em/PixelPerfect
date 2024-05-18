@@ -21,6 +21,8 @@ const observer = new IntersectionObserver((entries) => {
 //selecting elements to be animated
 const hiddenElements = document.querySelectorAll('.hidden');
 const hiddenElementsLeft = document.querySelectorAll('.hiddenLeft');
+const hiddenElementsFade = document.querySelectorAll('.hiddenFade');
 
 hiddenElements.forEach((el) => observer.observe(el));
 hiddenElementsLeft.forEach((el) => observer.observe(el));
+hiddenElementsFade.forEach((el) => observer.observe(el));
