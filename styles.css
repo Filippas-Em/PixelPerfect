@@ -533,3 +533,127 @@ header {
 .testPerson {
     margin: 20px;
 }
+
+
+.portfolio{
+    margin-bottom: 100px;
+}
+
+
+.portfolioWrapper{
+    color: #343a40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolioWrapper h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolioContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.pbox {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    height: 750px;
+    position: relative;
+}
+
+
+.portfolioImage img {
+    max-width: 400px;
+    margin: 10px;
+    width: 100%;
+}
+
+.portfolioInfo {
+    margin: 20px;
+    max-width: 380px;
+    width: 100%;
+}
+
+.portfolioInfo span {
+    font-weight: 600;
+}
+
+
+.portfolioInfo p {
+    margin: 10px;
+}
+
+.portfolioDescription {
+    max-width: 380px;
+    width: 100%;
+}
+
+.portfolioDescription p {
+    margin: 10px;
+}
+
+
+.buttonContainer {
+    position: absolute ;
+    width: 70%;
+    bottom: 20px;
+    left: 60px;
+}
+
+
+.portButton {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    color: #3498db;
+    background-color: transparent;
+    border: 2px solid #3498db;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.4s;
+}
+
+.portButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #3498db;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.portButton:hover::before {
+    transform: scaleX(1);
+}
+
+.portButton:hover {
+    color: white;
+}
+
+.pbox:nth-child(1) {
+    transition-delay: 200ms;
+}
+.pbox:nth-child(2) {
+    transition-delay: 400ms;
+}
+.pbox:nth-child(3) {
+    transition-delay: 600ms;
+}
+.pbox:nth-child(4) {
+    transition-delay: 800ms;
+}

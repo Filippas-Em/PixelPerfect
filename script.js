@@ -26,3 +26,6 @@ const hiddenElementsFade = document.querySelectorAll('.hiddenFade');
 hiddenElements.forEach((el) => observer.observe(el));
 hiddenElementsLeft.forEach((el) => observer.observe(el));
 hiddenElementsFade.forEach((el) => observer.observe(el));
+
+
+
