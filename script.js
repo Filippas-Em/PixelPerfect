@@ -96,3 +96,45 @@ window.addEventListener('scroll', function() {
     isMobileNavSticky = false; // Set isMobileNavSticky to false to indicate that navbar is no longer sticky
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission behavior
+
+      // Get form data
+      const formData = new FormData(form);
+      
+      // Convert FormData to JSON object
+      const jsonData = {};
+      formData.forEach((value, key) => {
+          jsonData[key] = value;
+      });
+
+      console.log(jsonData); // Log the form data
+
+      // Send form data to server using fetch
+      fetch("http://localhost:3000/send-email", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json"
+          },
+          body: JSON.stringify(jsonData)
+      })
+      .then(response => {
+          if (response.ok) {
+              console.log("Email sent successfully");
+              // Optionally, display a success message to the user
+          } else {
+              console.error("Failed to send email");
+              // Optionally, display an error message to the user
+          }
+      })
+      .catch(error => {
+          console.error("Error:", error);
+          // Optionally, display an error message to the user
+      });
+  });
+});

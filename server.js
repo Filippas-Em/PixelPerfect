@@ -19,9 +19,10 @@ app.listen(PORT, () => {
 
 app.post('/send-email', (req, res) => {
     const { name, email, message } = req.body;
-
+    console.log(req.body);
     // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
+        
     service: 'gmail', // Specify the email service provider
     auth: {
         user: 'emmanouil.filippas@gmail.com', // Your email address
@@ -35,11 +36,13 @@ app.post('/send-email', (req, res) => {
 
     // Define email content
     const mailOptions = {
-        from: 'emmanouil.filippas@gmail.com',
+        from: `"${name}" <${email}>`,
         to: "emmanouil.filippas@gmail.com",
-        subject: 'Subject of your email',
-        text: `Hello ${name},\n\n${message}`,
+        subject: `${email}`,
+        text: `Name ${name},\n\n Message ${message} \n\n Email ${email}`,
     };
+    
+    
 
     // Send email
     transporter.sendMail(mailOptions, (error, info) => {
@@ -52,3 +55,6 @@ app.post('/send-email', (req, res) => {
         }
     });
 });
+
+
+
