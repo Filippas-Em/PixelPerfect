@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Perfect</title>
+    <title>PixelPerfect</title>
+    <link rel="icon" href="Assets/p.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,32 +12,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="desktopNav">
+    <header id="header">
+        <nav class="desktopNav" id="navbar">
             <div class="navLogo">
                 <h2>PixelPerfect Solutions</h2>
             </div>
             <div class="navWrapper">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Services</a></li>
-                    <li><a href="contact.html">About Us</a></li>
-                    <li><a href="contact.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a id="top" href="#header">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
 
         <div class="off-screen-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Services</a></li>
-                <li><a href="contact.html">Portfolio</a></li>
-                <li><a href="contact.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
-        <nav class="hamNav">
+        <nav class="hamNav" id="mobileNav">
             <div><h2>PixelPerfect</h2></div>
             <div class="ham-menu">
                 <span></span>
@@ -61,7 +62,7 @@
         </div>
 
     </header>
-    <div class="services hidden">
+    <div class="services hidden" id="services">
         <div class="serviceWrapper">
                 <span id="serviceHeader">Services</span>
             <div class="serviceContainer">
@@ -138,7 +139,7 @@
         </div>
     </div>
     
-    <div class="about">
+    <div class="about" id="about">
         <div class="aboutWrapper hidden">
             <img src="Assets/about.jpg" alt="image">
             <div class="aboutContainer">
@@ -187,7 +188,7 @@
          
     </div>
     
-    <div class="testimonials hiddenFade">
+    <div class="testimonials hiddenFade" id="testimonials">
         <div class="testiWrapper">
             <div class="testiContainer">
                 <div class="testiTitle"><p>But don't just take our word for it. Here's what our clients have to say about working with Pixel Perfect:</p></div>
@@ -212,7 +213,7 @@
         </div>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="portfolioWrapper">
             <h3>Here Is Some Of Our Work</h3>
             <div class="portfolioContainer">
@@ -278,7 +279,7 @@
         </div>
     </div>
     
-    <div class="contact ">
+    <div class="contact " id="contact">
         <div class="contactWrapper">
             <div class="contactStart">
                 <h3>Contact Us</h3>
@@ -312,11 +313,11 @@
             <div class="linkBox hidden">
                 <div class="linkTitle"><p>Quick Links</p></div>
                 <div class="linkContent">
-                    <a href="">Home</a>
-                    <a href="">About Us</a>
-                    <a href="">Amenities</a>
-                    <a href="">Pricing</a>
-                    <a href="">Contact</a>
+                    <a id="top" href="">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Amenities</a>
+                    <a href="#services">Pricing</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
             <div class="linkBox hidden">
