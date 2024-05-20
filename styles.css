@@ -89,7 +89,7 @@ header {
 }
 
 .hero {
-    margin-top: 10%;
+    padding: 10%;
     margin-left: 15%;
     font-size: 50px;
     display: flex;
@@ -871,7 +871,7 @@ label{
     top: 0;
     width: 100%;
     z-index: 1000; 
-    transition: all 0.8s ease; 
+    transition: all 1s ease; 
     margin: 0;
   }
 
