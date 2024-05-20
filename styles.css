@@ -731,7 +731,28 @@ header {
     border: none;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+.contactForm h3 {
+    margin-bottom: 20px;
+}
 
+
+.form-group{
+    position: relative;
+}
+
+label{
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+
+
+#name, #email, #message{
+    width: 100%;
+}
 
 .contactForm textarea {
     height: 150px;

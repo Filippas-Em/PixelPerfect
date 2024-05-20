@@ -289,14 +289,24 @@
                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6291.442364914056!2d23.7038963888855!3d37.96029573791566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bcf825aa86ed%3A0x4193783e3d2227f7!2sLaskaridou%2054%2C%20Kallithea%20176%2076!5e0!3m2!1sen!2sgr!4v1716039748731!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
                 <form class="contactForm" id="contactForm" method="POST">
                     <h3>Send A Message</h3>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                    
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" cols="4" required></textarea>
+                    <div class="form-group">       
+                        <input  type="text" id="name" name="name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input  type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <textarea  id="message" name="message" cols="21" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    
                     <input type="submit" id="submitButton" value="Send!" />
                 </form>
 

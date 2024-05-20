@@ -100,6 +100,10 @@ window.addEventListener('scroll', function() {
 
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.getElementById("contactForm");
+  const submitButton = document.getElementById("submitButton");
+  const originalButtonValue = submitButton.value;
+  const originalButtonColor = window.getComputedStyle(submitButton).getPropertyValue('background-color');
+
 
   form.addEventListener("submit", function(event) {
       event.preventDefault(); // Prevent default form submission behavior
@@ -127,6 +131,13 @@ document.addEventListener("DOMContentLoaded", function() {
           if (response.ok) {
               console.log("Email sent successfully");
               // Optionally, display a success message to the user
+              submitButton.style.backgroundColor = "green";
+              submitButton.value = "Email Sent!";             // Reset button style and text after 5 seconds
+                setTimeout(() => {
+                    submitButton.style.backgroundColor = originalButtonColor;
+                    submitButton.value = originalButtonValue;
+                }, 5000);
+              form.reset();
           } else {
               console.error("Failed to send email");
               // Optionally, display an error message to the user
@@ -135,6 +146,35 @@ document.addEventListener("DOMContentLoaded", function() {
       .catch(error => {
           console.error("Error:", error);
           // Optionally, display an error message to the user
+      });
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const inputs = document.querySelectorAll('.form-group input, .form-group textarea');
+
+  inputs.forEach(input => {
+      const label = input.nextElementSibling;
+
+      if (input.value) {
+          label.style.transform = "translateY(-20px)";
+          label.style.fontSize = "12px";
+          label.style.color = "black";
+      }
+
+      input.addEventListener('focus', function() {
+          label.style.transform = "translateY(-30px)";
+          label.style.fontSize = "15px";
+          label.style.color = "black";
+      });
+
+      input.addEventListener('blur', function() {
+          if (!this.value) {
+              label.style.transform = "translateY(0px)";
+              label.style.fontSize = "16px";
+              label.style.color = "grey";
+          }
       });
   });
 });
