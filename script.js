@@ -10,12 +10,13 @@ hamMenu.addEventListener("click", () => {
 // scroll animations
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        console.log(entry);
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } 
-    });
+  entries.forEach(entry => {
+    if (window.innerWidth > 768) { // Check if the screen width is greater than 768px
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+      } 
+    }
+  });
 });
 
 //selecting elements to be animated

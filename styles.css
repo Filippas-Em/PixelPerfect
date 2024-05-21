@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden
 }
 
 body{
@@ -17,6 +18,7 @@ body{
 header {
     background: linear-gradient(45deg, violet, lightblue);
     height: 100vh;
+    
     border-bottom-right-radius: 100px;
     font-size: 25px;
     position: relative;
@@ -161,8 +163,7 @@ header {
 }
 
 .off-screen-menu {
-    background: rgba(255, 255, 2555, .1);
-    backdrop-filter: blur(10px);
+    background-color: #343a40;
     box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.2);
     height: 100vh;
     width: 100%;    
@@ -238,7 +239,6 @@ header {
 
 .off-screen-menu ul li a {
     text-decoration: none;
-    background-color: black;
     border-radius: 10px;
     padding: 0 20px;
     color: white;
